@@ -1,7 +1,6 @@
 {
   "name": "proyecto-en-playground",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node app",
@@ -12,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rascasse01/MercadoLiebre.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rascasse01/MercadoLiebre/issues"
+  },
+  "homepage": "https://github.com/Rascasse01/MercadoLiebre#readme",
+  "description": ""
 }
