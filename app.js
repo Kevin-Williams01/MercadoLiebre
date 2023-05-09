@@ -23,6 +23,8 @@ app.get('/login', (req, res) => {
     res.sendFile(htmlPath);
 });
 
-app.listen(3000, (req, res) => {
-    console.log('Escuchando en el puerto 3000');
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+    console.log('Servidor escuchando en el puerto ' + port)
 });

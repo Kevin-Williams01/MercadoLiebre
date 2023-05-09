@@ -80,6 +80,11 @@ main {
     width: 90vw;
     border-bottom: 10px;
     box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
+.imagen-banner{
+    width: 100vw;
 }
 
 section {
@@ -230,7 +235,8 @@ p {
 
 footer {
     text-align: center;
-    margin-top: 100px;
+    padding-top: 30px;
+    background-color: white;
 }
 
 .copyright {
@@ -321,6 +327,10 @@ footer section i {
     .login .control {
         width: 70vw;
         max-width: 1024px;
+    }
+
+    footer{
+        padding-top: 75px;
     }
 }
 
