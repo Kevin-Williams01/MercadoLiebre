@@ -219,7 +219,10 @@ p {
 
 .boton-formulario button {
     font-size: 20px;
-    padding: 5px;
+    width: 10vw;
+    border: none;
+    color: white;
+    background-color: #1259c3;
 }
 
 .login {
@@ -397,6 +400,10 @@ footer section i {
     }
 
     .login div button:hover {
+        background-color: #0022AA;
+    }
+
+    .boton-formulario button:hover{
         background-color: #0022AA;
     }
 
