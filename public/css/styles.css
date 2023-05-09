@@ -251,7 +251,10 @@ footer {
 .copyright {
     text-align: left;
     padding: 10px;
-    margin-top: 20px;
+}
+
+footer section{
+    margin-bottom: 20px;
 }
 
 footer section p.title {
