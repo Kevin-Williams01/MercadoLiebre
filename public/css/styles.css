@@ -29,6 +29,10 @@ header {
     justify-content: space-between;
 }
 
+.banner a{
+    display: flex;
+}
+
 .banner img {
     width: 45vw;
 }
@@ -36,11 +40,23 @@ header {
 .searchbar {
     align-items: center;
     flex-wrap: nowrap;
-    border: none;
+    border-radius: 10px;
+    background-color: white;
 }
 
 .searchbar input {
-    flex-grow: 1;
+    padding-left: 10px;
+    border: none;
+    outline: 0;
+    border-radius: 5px;
+    width: 35vw;
+}
+
+.searchbar button{
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .compra {
@@ -131,7 +147,7 @@ p {
 
 .producto div {
     background-color: white;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 10px;
     box-sizing: border-box;
     position: relative;
@@ -182,12 +198,12 @@ p {
 }
 
 .register {
-    padding: 20px 15px;
+    padding: 20px;
     width: 100vw;
-}
-
-.control-form {
-    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
 
 .control-form label {
@@ -196,10 +212,14 @@ p {
     display: block;
 }
 
-.control {
+.register .control {
     width: 100%;
     padding: 8px;
     border: none;
+}
+
+.register .control-form{
+    margin-bottom: 20px;
 }
 
 .perfil {
@@ -218,8 +238,8 @@ p {
 }
 
 .boton-formulario button {
-    font-size: 20px;
-    width: 10vw;
+    width: 30vw;
+    padding: 8px;
     border: none;
     color: white;
     background-color: #1259c3;
@@ -232,6 +252,7 @@ p {
 }
 
 .login .control {
+    width: 100%;
     padding: 8px;
     margin-bottom: 20px;
     border: none;
@@ -249,7 +270,6 @@ footer {
 }
 
 .copyright {
-    text-align: left;
     padding: 10px;
 }
 
@@ -270,15 +290,14 @@ footer section i {
 @media (min-width: 768px) {
 
     .banner {
-        display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
         flex-direction: row;
     }
 
-    .banner img {
-        width: 20vw;
+    .banner img{
+        width: 15vw;
+        align-self: center;
     }
 
     .searchbar{
@@ -287,7 +306,7 @@ footer section i {
     }
 
     .searchbar input{
-        width: 30vw;
+        width: 37vw;
     }
 
     .compra {
@@ -333,17 +352,27 @@ footer section i {
         display: none;
     }
 
+    .register .control {
+        width: 70vw;
+        max-width: 768px;
+    }
+
     .control-form {
         max-width: 425px;
     }
 
     .boton-formulario{
-        max-width: 425px;
+        width: 70vw;
+        max-width: 768px;
+    }
+
+    .boton-formulario button{
+        width: 10vw;
     }
 
     .login .control {
         width: 70vw;
-        max-width: 1024px;
+        max-width: 768px;
     }
 
     footer{
@@ -353,8 +382,15 @@ footer section i {
 
 @media (min-width: 1024px) {
 
+    .banner img{
+        width: 10vw;
+        align-self: center;
+    }
+
     .searchbar{
-        margin-left: 7,5vw;
+        width: 40vw;
+        margin-left: 8vw;
+        margin-right: 8vw;
     }
 
     .menu {
@@ -402,6 +438,14 @@ footer section i {
             display: flex;
     }
 
+    .producto div i{
+        transition: 450ms;
+    }
+
+    .producto:hover div i{
+        transform: rotate(-90deg)
+    }
+
     .login div button:hover {
         background-color: #0022AA;
     }
@@ -419,7 +463,7 @@ footer section i {
     .main-footer section{
         display: flex;
         flex-wrap: wrap;
-        width: 33vw;
+        width: 30vw;
     }
 
     .main-footer section:hover i{
